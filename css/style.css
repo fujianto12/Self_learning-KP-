@@ -1376,11 +1376,12 @@ a:focus {
 .single .single-tags a {
     margin: 5px;
     display: inline-block;
-    padding: 7px 15px;
+    padding: 14px 30px;
     font-size: 14px;
+    border-radius: 10px;
     font-weight: 400;
     color: #666666;
-    border: 1px solid #dddddd;
+    border: 3px solid #dddddd;
 }
 
 .single .single-tags a:hover {
