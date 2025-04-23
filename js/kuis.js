@@ -12,12 +12,26 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const timerElement = document.getElementById("timer");
 
+
 let currentQuestionIndex = 0;
 let score = 0;
 let timeLeft = 100;
 let timer;
 
-startButton.addEventListener("click", startQuiz);
+
+startButton.addEventListener("click", () => {
+    document.getElementById("confirm-modal").style.display = "flex";
+});
+
+document.getElementById("yes-btn").addEventListener("click", () => {
+    document.getElementById("confirm-modal").style.display = "none";
+    startQuiz();
+});
+
+document.getElementById("no-btn").addEventListener("click", () => {
+    window.history.back();
+});
+
 nextButton.addEventListener("click", handleNextButton);
 
 function startQuiz() {
@@ -128,3 +142,4 @@ function resetToStart() {
     timerElement.innerHTML = "";
     nextButton.innerHTML = "Selanjutnya"; 
 }
+

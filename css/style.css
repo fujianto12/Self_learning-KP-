@@ -7,6 +7,9 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
+input[type="file"] {
+    display: none;
+}
 
 h1,
 h2, 
@@ -223,10 +226,34 @@ a:focus {
         padding: 20px;
     }
     
-    .nav-bar .navbar-brand {
-        display: none;
+    .nav-bar .navbar-profile {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin-left: 20px;
+        border: 3px solid white;
     }
-    
+
+
+    .upload-btn {
+        position: absolute;
+        margin-bottom: 10px;
+        background: white;
+        color: #008CBA;
+        border: none;
+        padding: 2px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .upload-btn:hover {
+        background: #ddd;
+    }
+
+
     .nav-bar a.nav-link {
         padding: 8px 15px;
         font-size: 15px;
@@ -1379,9 +1406,9 @@ a:focus {
     padding: 14px 30px;
     font-size: 14px;
     border-radius: 10px;
-    font-weight: 400;
-    color: #666666;
-    border: 3px solid #dddddd;
+    font-weight: bold;
+    color: black;
+    border: 3px solid black;
 }
 
 .single .single-tags a:hover {
@@ -2335,3 +2362,4 @@ a:focus {
 }
 
 /* services section end */
+

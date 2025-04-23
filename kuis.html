@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/kuis.css">
 </head>
+
 <body>
     <div class="app">
         <h1>Simple Quiz</h1>
@@ -17,6 +19,21 @@
             <button id="next-btn">Next</button>
         </div>
     </div>
+    <!-- <a href="portfolio.html" class="btn btn-primary">Keluar</a> -->
+
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <h3>Peraturan</h3>
+            <p>1. Jawaban merupakan pilihan ganda.</p>
+            <p>2. Soal yang sudah terpilih, tidak bisa ubah.</p>
+            <h3 style="margin-top: 20px;">Apakah Anda Siap Memulai Menjawab?</h3>
+
+            <button id="yes-btn">Ya</button>
+            <button id="no-btn">Tidak</button>
+        </div>
+    </div>
+
     <script src="js/kuis.js"></script>
 </body>
+
 </html>
