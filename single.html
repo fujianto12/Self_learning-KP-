@@ -89,7 +89,6 @@
         <div class="nav-bar">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -98,8 +97,30 @@
                         <div class="navbar-nav mr-auto">
                             <a href="index.html" class="nav-item nav-link">Home</a>
                             <a href="about.html" class="nav-item nav-link">Tentang Perusahaan</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                            <a href="selflearning.html" class="nav-item nav-link active">Self Learning</a>
                         </div>
+                        <!-- Profil start -->
+                        <div class="btn-group">
+                            <button type="button" class="btn bg-transparent border-0" data-bs-toggle="dropdown"
+                                data-bs-display="static" aria-expanded="false">
+                                <img id="navbar-profile" src="https://via.placeholder.com/120" class="navbar-profile"
+                                    alt="">
+
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <label class="upload-btn" for="upload">Ubah Profile</label>
+                                        <input type="file" id="upload" accept="image/*">
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Keluar</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Profil end -->
                     </div>
                 </nav>
             </div>
